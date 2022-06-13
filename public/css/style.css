@@ -1,0 +1,662 @@
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    min-height: 100vh;
+    position: relative;
+}
+body {
+    background-color: #26b382;
+}
+header {
+    max-width: 100%;
+    margin: 0px;
+    display: flex;
+    /* position: fixed; */
+    z-index: 50;
+    justify-content: flex-start;
+    background-color: #2acf56;
+    height: 80px;
+    border-bottom: 3px solid black;
+}
+
+header .buscador {
+    height: 20px;
+    margin-top: 30px;
+}
+
+header .btn-buscador {
+    border-radius: 40px;
+    height: 30px;
+    margin-top: 25px;
+}
+
+header ul {
+    line-height: 80px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+header ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header ul li {
+    padding: 0px 10px;
+    max-width: 100%;
+}
+header ul li .icon-header{
+    display: none;
+}
+
+header ul li:hover {
+    background-color: #125e26;
+    color: white;
+}
+.producto img{
+    border-radius: 25px;
+}
+.fav:hover{
+    cursor: pointer;
+}
+
+.carrusel{
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-top: 20px; 
+    max-width: 80%;
+    height: 490px;
+    background-color: white;
+    overflow: hidden;
+}
+.carrusel:hover{
+    cursor: pointer;
+}
+.carrusel img{
+    width: 100%;
+    height: 100%;
+}
+.carrusel h2{
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    border-top: 2px solid black;
+    position: relative;
+    top: -40px;
+}
+.news{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.news-cards{
+    padding: 25px;
+    max-width: 200px;
+    height: 240px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    overflow: hidden;
+    justify-items: center;
+}
+.news-cards img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+.news-cards h2{
+    text-align: center;
+    padding: 4px;
+}
+.news-cards:hover{
+    cursor: pointer;
+}
+.travel-card{
+    overflow: hidden;
+    border-radius: 25px;
+    border:3px solid black;
+    margin-top: 30px;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.travel-card img{
+    max-height: 500px;
+    width: 100%;
+    /* object-fit: cover; */
+}
+.travel-info{
+    max-height: 500px;
+    width: 600px;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    
+}
+.travel-info p{
+    padding-top: 5px;
+    height: 380px;
+}
+.travel-info h3{
+    padding-bottom: 5px;
+}
+.travel-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.travel-btn img{
+    width: 30px;
+    height: 30px;
+}
+i{
+    width: 30px;
+    height: 30px;
+}
+.travel-btn svg:hover{
+    color: yellow;
+}
+.price{
+    color: green;
+}
+.separador{
+    max-width: 95%;
+    border-color: rgba(0, 0, 0, 0.563);
+}
+.shop-content{
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shop-card{
+    overflow: hidden;
+    border-radius: 25px;
+    border:3px solid black;
+    height: 500px;
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.shop-card img{
+    height: 400px;
+    width: 300px;
+}
+.shop-info{
+    border-top: 2px solid black;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+}
+.shop-info hr{
+    width: 90%;
+}
+.shop-btn{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 300px;
+    padding: 20px 0px;
+}
+.shop-btn img{
+    width: 30px;
+    height: 30px;
+}
+footer {
+    background-color: black;
+    margin-top: 30px;
+    padding: 20px 0px;
+    width: 100%;
+    min-height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-div{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  .redes-sociales{
+      margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+
+  }
+.login{
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 10%;
+    
+    margin-bottom: 20%;
+    width: 30%;
+    height: 250px;
+    background-color: white;
+}
+.login hr{
+    width: 90%;
+}
+
+
+.btn-outline-primary {
+    color: #006a12;
+    border: 1px solid #006a12;
+  }
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #4cfd69;
+    border-color: #4cfd69;
+}
+  
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #006a12;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+.form-login{
+    margin: 20px 0px;
+      
+  }
+.form-control {
+    display: block;
+    width: 80%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .mt-2 {
+    margin-top: 1rem !important;
+  }
+  .login h4{
+      opacity: 0.7;
+  }
+
+
+  
+.register{
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 5%;
+    width: 30%;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 13.5%;
+    border: 1px solid black;
+}
+.btn-select{
+    background-color: white;
+}
+.img-header{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 700px;
+    border-bottom: 3px solid black ;
+}
+.img-profile{
+    position: relative;
+    z-index: 2;
+    width: 202px;
+    height: 202px;
+    top: -100px;
+    left: 100px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: white;
+}
+.img-profile-comments{
+    border-radius: 50px;
+    margin-right: 5px;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+.profile-content{
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    /* float: left; */
+    padding: 25px;
+    border-radius: 35px;
+    border: 1px solid black;
+    width: 20%;
+    background-color: white;
+    height: 100vh;
+}
+.commentsphotos{
+    border-radius: 5%;
+    border: 1px solid black;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+.commentsphotos hr{
+    width: 90%;
+}
+.comentario{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.comentario input{
+    /* height: 70px; */
+    /* width: 50%; */
+    margin-bottom: 10px;
+}
+.photo{
+    margin: 50px;
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+}
+.comments-content{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    align-items: center;
+}
+.comments-content p{
+    margin-left: 20px;
+    min-width: 70%;
+}
+.form-foto{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    height: 40px;
+    width: 90%;
+    text-align: left;
+}
+.paginacion {
+    border-top: 1px solid black;
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginacion .btn{
+    background-color: white;
+    max-width: 100px;
+}
+.deseos{
+    max-width: 70%;
+    min-height: 80%;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.producto img{
+    width: 100px;
+}
+.producto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-between;
+    padding: 20px 0px;
+    width: 100%;
+
+}
+.deseos hr{
+    max-width: 80%;
+}
+.img-profile-header{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    border-radius: 25px;
+}
+.icon-header{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    border-radius: 25px;
+}
+
+.conf{
+    max-width: 70%;
+    min-height: 80%;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.producto-page{
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-top: 40px;
+    width: 80%;
+    background-color: white;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.producto-page img{
+    height: 100%;
+    width: 30%;
+    border-radius: 25px;
+}
+.producto-info{
+    width: 50%;
+    text-align: center;
+}
+.producto-info hr{
+    margin: 10px 0px;
+}
+.producto-info p{
+    
+    padding: 20px;
+    font-size: 2rem;
+}
+.btn-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.viaje-page{
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-top: 40px;
+    width: 60%;
+    background-color: white;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.viaje-page img{
+    margin-top: 2.5%;
+    width: 95%;
+    border-radius: 25px;
+    padding: 0px;
+    border: 1px solid black;
+}
+.viaje-info{
+    width: 75%;
+    text-align: center;
+    padding: 20px;
+}
+.viaje-info hr{
+    margin: 10px 0px;
+}
+.viaje-info p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 2rem;
+}
+.viaje-comments{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-bottom: 1px solid rgba(22, 83, 38, 0.45);
+    justify-content: center;
+}
+
+.coment{
+    border-radius: 25px;
+    padding: 20px 0px;
+    border: 1px solid black;
+    margin-top: 40px;
+    width: 60%;
+    background-color: white;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.en-info{
+    width: 80%;
+    font-size: 2rem;
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 25px;
+    height: 80%;
+    border:1px solid black;
+}
+.img-profile-comments:hover{
+    cursor: pointer;
+}
+header form button {
+    display: flex;
+    flex-direction: row;
+}
+.icon-header-user{
+    display: none;
+}
+@media (max-width:1233px){
+header form button p{
+    display:none;
+}
+header ul a li p{
+    display: none;
+}
+header ul li .icon-header{
+    display: initial;
+}
+
+    .news{
+        flex-wrap: wrap;
+    }
+    .travel-card{
+        flex-direction: column;
+        
+    }
+    .travel-info{
+        width: 95%;
+        padding: 20px;
+    }
+    
+.shop-content{
+    max-width: 90%;
+}
+
+.profile-content{
+    flex-direction: column;
+    gap: 10px;
+}
+.info{
+    width: 90%;
+}
+
+.commentsphotos{
+    width: 90%;
+}
+.comments-content p{
+    max-width: 50%;
+    min-width: 50%;
+}
+.login{
+    width: 90%;
+}
+.register{
+    width: 90%;
+}
+header ul a li p{
+    display: none;
+}
+.buscador{
+    max-width: 50%;
+}
+.form-buscador{
+    width: 100%;
+    margin-left: 30px;
+}
+header form button p{
+    display:none;
+}
+ .img-profile-header{
+    display: none;
+}
+.icon-header-user{
+    display: initial;
+}
+
+}
+@media (max-width:1233px){
+    
+.buscador{
+    max-width: 30%;
+}
+}
