@@ -37,9 +37,16 @@ class userController extends Controller
         }
     }
     public function registro(request $datos){
-        if ($datos->contraseña != $datos->password) {
+        $user = usuario::where('email','=', $datos->email)->first();
+        $user2 = usuario::where('Usuario','=', $datos->usuario)->first();
+        if ($datos->contraseña != $datos->password || $datos->usuario == null) {
             return redirect('register');
-        } else{
+        } else if(isset($user2)){
+
+            return redirect('register');
+        } else if(isset($user)){
+            return redirect('register');
+        }else{
             $user = new usuario;
             $user->Usuario = $datos->usuario;
             $user->nombre = $datos->name;

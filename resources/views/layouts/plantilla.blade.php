@@ -77,7 +77,7 @@
     <p>antonio.bermejo-marin@iesruizgijon.com</p>
     <br>
     <h2>Ayuda</h2>
-    <a href="">Guía de uso</a>
+    <a href="{{route('ayuda')}}">Guía de uso</a>
 </div>
 <div class="footer-div"> 
     <h2>Redes sociales</h2>

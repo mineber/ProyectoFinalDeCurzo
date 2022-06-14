@@ -38,4 +38,5 @@ Route::post('producto', [shopController::class, 'producto'])->name('producto');
 Route::post('viaje', [travelController::class, 'viaje'])->name('viaje');
 Route::get('conf', [userController::class, 'conf'])->name('conf');
 Route::get('info', [indexController::class, 'info'])->name('info');
+Route::get('ayuda', [indexController::class, 'ayuda'])->name('ayuda');
 Route::post('buscar', [indexController::class, 'buscar'])->name('buscar');

@@ -22,6 +22,10 @@ class indexController extends Controller
         session_start();
         return view('info');
     }
+    public function ayuda(){
+        session_start();
+        return view('ayuda');
+    }
     public function buscar(request $datos)
     {
         session_start();
