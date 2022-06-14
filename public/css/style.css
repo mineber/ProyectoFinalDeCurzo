@@ -575,6 +575,7 @@ footer {
 .en-info{
     width: 80%;
     font-size: 2rem;
+    text-align: center;
     background-color: white;
     padding: 20px;
     margin-top: 30px;
@@ -594,6 +595,9 @@ header form button {
 }
 .conf-things{
     display: flex; flex-direction:row; width: 50%; align-items:center ; padding: 10px 0px;
+}
+.en-info img{
+    width: 20%;
 }
 @media (max-width:1233px){
     header{
@@ -735,6 +739,7 @@ height: 300px;
 .shop-card img{
     max-height: 400px;
     max-width: 300px;
+    object-fit: cover;
 }
 .shop-btn{
     padding: 0px;
@@ -764,10 +769,7 @@ height: 300px;
     padding: 10px;
 }
 
-.shop-card img{
-    max-height: 350px;
-    max-width: 240px;
-}
+
 }
 @media (max-width:1233px){
     

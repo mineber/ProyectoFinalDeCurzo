@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="{{asset('css/bootstrap/dist/css/bootstrap.css')}}"> -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="icon" href="{{asset('img/Enjoy_Nature_Logo.png')}}">
     <link rel="stylesheet" href="{{asset('css/fontawesome-all.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/icons/fontawesome/css/fontawesome.css')}}">
     <link rel="stylesheet" href="{{asset('css/icons/fontawesome/js/fontawesome.js')}}">

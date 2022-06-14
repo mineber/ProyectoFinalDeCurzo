@@ -2,6 +2,7 @@
 @section('title', 'EnjoyNature')
 @section('content')
 <div class="en-info">
+    <img src="{{asset('img/Enjoy_Nature_Centrado.png')}}" alt="">
     <p>EnjoyNature es una empresa que trata de ayudar a nuestro planeta de una forma especial. Esta
 empresa es una agencia de viajes que con una parte de las ganancias por cada viajes se recaudará
 dinero para ayudar a replantar árboles y plantas e incluso ayudar a ONG’s que se dediquen a ayudar

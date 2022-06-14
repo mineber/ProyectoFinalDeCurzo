@@ -43,37 +43,34 @@
         <hr><br>
         <h2>Productos que te pueden gustar</h2>
         <div class="shop-content">
-        <?php 
         
-        $aleatorio = 0;
-        $contador = 0;
-        do{ ?>
         
-        @foreach($productos as $producto)
-       
-        @if($producto->id == rand(1, 10))
-        <?php $contador +=1; ?>
+        
+        <?php for ($i=0; $i < 3; $i++) { 
+            # code...
+            $aleatorio = rand(1,10);
+        ?>
+        
         <div class="shop-card">
-            <img src="img/shop/{{$producto->Fotos}}" alt="">
+            <img src="img/shop/{{$productos[$aleatorio]->Fotos}}" alt="">
             <div class="shop-info">
-                <h2> {{$producto->Nombre}}</h2>
+                <h2> {{$productos[$aleatorio]->Nombre}}</h2>
             <hr>
                 <div class="shop-btn">
                 
                 
-                <div><h2 style="float:left;">Precio: <h2 class="price" style="float:left;">{{$producto->Precio}}€</h2> </h2></div>
+                <div><h2 style="float:left;">Precio: <h2 class="price" style="float:left;">{{$productos[$aleatorio]->Precio}}€</h2> </h2></div>
                 <img src="{{asset('icons/circle-info-solid.svg')}}" alt="" srcset="" class="fav">
                 
                 <form action="{{route('save2')}}" method="post">
                 @csrf
-                    <input type="hidden" name="id" value="{{$producto->id}}">
+                    <input type="hidden" name="id" value="{{$productos[$aleatorio]->id}}">
                 <button value="Guardar" name="" class="btn btn-outline-primary">Guardar</button>
                 </form></div>
             </div>
         </div>
-        @endif
-        @endforeach
-        <?php }while($contador!=3); ?> </div>
+        
+        <?php } ?>
     @endif  
 </div>
     
