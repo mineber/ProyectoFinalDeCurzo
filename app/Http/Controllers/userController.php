@@ -71,6 +71,7 @@ class userController extends Controller
         $_SESSION['total'] = 0;
         $deseos = listadeseos::where(strtoupper('Usuario'), '=', $_SESSION['user'])->paginate(50);
         $productos = tienda::all();
+        
 
         return view('listadeseos', compact('deseos', 'productos'));
     }
