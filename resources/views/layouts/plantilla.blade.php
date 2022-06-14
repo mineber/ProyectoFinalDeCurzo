@@ -19,7 +19,7 @@
         
         <ul>
             <a href="{{route('index')}}">
-                <li><p> Inicio</p> </li>
+                <li><p> Inicio</p><img src="{{asset('icons/house-solid.svg')}}" alt="" srcset="" class="icon-header"> </li>
             </a>
             <a href="{{route('travel')}}">
                 <li><p>Viajes</p> <img src="{{asset('icons/plane-solid.svg')}}" alt="" srcset="" class="icon-header"></li>
@@ -52,7 +52,6 @@
                 <li>Regístrate</li>
             </a>
             <?php } else {?>
-               <ul >
                     <a href="{{route('profile')}}"><li class="user-header">
                 <?php if(isset($_SESSION['user'])){ 
                 echo '<p style="float:left;  margin-right:10px;">'.$_SESSION['user'].'</p>';
@@ -64,7 +63,7 @@
                     <a href="{{route('ld')}}"><li><p>Lista de deseos</p>  <img src="{{asset('icons/heart-solid.svg')}}" alt="" srcset="" class="icon-header"></li></a>
                     <a href="{{route('conf')}}"><li><p>Configuración</p> <img src="{{asset('icons/gear-solid.svg')}}" alt="" srcset="" class="icon-header"></li></a>
                     <a href="{{route('cs')}}"><li><p>Cerrar sesión </p><img src="{{asset('icons/right-from-bracket-solid.svg')}}" alt="" srcset="" class="icon-header"></li></a>
-                </ul>
+                
             <?php } ?>
         </ul>
     </header>

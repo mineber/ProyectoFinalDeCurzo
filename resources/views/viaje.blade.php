@@ -4,7 +4,7 @@
 <div class="viaje-page">
 <img src="img/travel/{{$viajes->foto}}" alt="">
 <div class="viaje-info">
-   <h1> {{$viajes->Nombre}} - {{round($media/$contadorp, 2)}}*</h1>
+   <h1> {{$viajes->Nombre}} @if($contadorp != 0)- {{round($media/$contadorp, 2)}} * @endif</h1>
    <hr>
    <p>{{$viajes->Descripcion}}</p>
    <hr>
@@ -53,7 +53,9 @@
     <a href="{{ $coment->previousPageUrl() }}" class="btn btn-outline-primary">< Atrás</a>
     @endif
     <p>Página {{ $coment->currentPage() }} de {{ $coment->lastPage() }}</p>
+    @if($coment->currentPage() != 1)
     <a href="{{ $coment->nextPageUrl() }}" class="btn btn-outline-primary">Siguiente ></a>
+    @endif
 </div>  
     
 </div>

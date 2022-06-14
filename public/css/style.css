@@ -17,8 +17,9 @@ header {
     /* position: fixed; */
     z-index: 50;
     justify-content: flex-start;
+    flex-wrap: wrap;
     background-color: #2acf56;
-    height: 80px;
+    min-height: 80px;
     border-bottom: 3px solid black;
 }
 
@@ -38,6 +39,7 @@ header ul {
     display: flex;
     list-style: none;
     flex-direction: row;
+    align-items: center;
 }
 
 header ul a {
@@ -188,7 +190,7 @@ i{
     border-radius: 25px;
     border:3px solid black;
     height: 500px;
-    width: 300px;
+    max-width: 300px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -216,14 +218,19 @@ i{
     padding: 20px 0px;
 }
 .shop-btn img{
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
 }
 footer {
     background-color: black;
+    margin: auto;
+    position: absolute;
+    bottom: -200px;
+
     margin-top: 30px;
     padding: 20px 0px;
     width: 100%;
+    clear: both;
     min-height: 100px;
     color: white;
     display: flex;
@@ -318,7 +325,7 @@ footer {
     text-align: center;
     border-radius: 25px;
     margin-top: 5%;
-    width: 30%;
+    max-width: 90%;
     height: 400px;
     background-color: white;
     margin-bottom: 13.5%;
@@ -365,7 +372,7 @@ footer {
     border: 1px solid black;
     width: 20%;
     background-color: white;
-    height: 100vh;
+    min-height: 300px;
 }
 .commentsphotos{
     border-radius: 5%;
@@ -585,7 +592,13 @@ header form button {
 .icon-header-user{
     display: none;
 }
+.conf-things{
+    display: flex; flex-direction:row; width: 50%; align-items:center ; padding: 10px 0px;
+}
 @media (max-width:1233px){
+    header{
+        justify-items: center;
+    }
 header form button p{
     display:none;
 }
@@ -626,6 +639,7 @@ header ul li .icon-header{
 .comments-content p{
     max-width: 50%;
     min-width: 50%;
+    min-height: 50px;
 }
 .login{
     width: 90%;
@@ -652,7 +666,108 @@ header form button p{
 .icon-header-user{
     display: initial;
 }
+footer{
+    flex-direction: column;
+    gap: 10px;
+    bottom: -300px;
+}
+#buscador{
+    text-align: center;
+    border-bottom: 1px solid rgba(26, 57, 13, 0.544);
+    border-top: 1px solid rgba(26, 57, 13, 0.544);
+    align-content: center;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+header ul li{
+    width: 50px;
+}
+.viaje-page{
+    width: 95%;
+}
+.coment{
+    width: 95%; 
+}
+.comments-content{
+    display: initial;
+    width: 95%;
+    text-align: left;
+}
+.comments-content img{
+    float: left;
+}
+.comments-content p{
+    width: 80%;
+    min-height: 90px;
+}
+.comments-content form{
+    text-align: center;
+}
+.viaje-info p{
+    font-size: 1rem;
+}
+.img-header{
+height: 300px;
+}
+.text{
+    width: 100%;
+}
+.conf-things{
+    flex-direction: column;
+    width: 100%;  padding: 10px 0px;
+}
+.conf-things .btn{
+    width: 90%;
+}
+.img-profile{
+    left: 75px;
+}
+.deseos{
+    width: 97%;
+}
+.producto{
+    flex-direction: column;
+}
+.shop-card{
+    
+    max-height: 500px;
+}
+.shop-card img{
+    max-height: 400px;
+    max-width: 300px;
+}
+.shop-btn{
+    padding: 0px;
+    flex-direction: column;
+}
+.shop-btn img{
+    width: 30px;
+    height: 30px;
+}
 
+.carrusel{
+    height: 300px;
+}
+.carrusel h2{
+    text-align: center;
+    background-color: white;
+    border-top: 2px solid black;
+    position: relative;
+    top: -70px;
+}
+.shop-info{
+    width: 100%;
+}
+.shop-btn{
+    
+    gap: 10px;
+    padding: 10px;
+}
+
+.shop-card img{
+    max-height: 350px;
+    max-width: 240px;
+}
 }
 @media (max-width:1233px){
     
