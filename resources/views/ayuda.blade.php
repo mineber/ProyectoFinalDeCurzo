@@ -1,7 +1,7 @@
 @extends('layouts.plantilla')
 @section('title', 'EnjoyNature')
 @section('content')
-<div class="en-info" style="text-align: justify;">
+<div class="en-info" style="text-align: justify; padding: 40px; font-size: 1.5rem;">
 <h2>Principal</h2>
     <p>Para empezar podemos observar el header de la página. Desde aquí podemos llegar a varios apartados de nuestra página. <br><br>
     
