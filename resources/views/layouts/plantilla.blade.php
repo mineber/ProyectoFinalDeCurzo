@@ -17,6 +17,7 @@
 
 <body>
     <header>
+    <img src="{{asset('img/Enjoy_Nature_Centrado.png')}}" alt="" height="80px">
         
         <ul>
             <a href="{{route('index')}}">

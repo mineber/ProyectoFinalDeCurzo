@@ -635,7 +635,11 @@ header ul li .icon-header{
 }
 .info{
     width: 90%;
+    
 }
+.en-info{
+    font-size:1rem;}
+
 
 .commentsphotos{
     width: 90%;
