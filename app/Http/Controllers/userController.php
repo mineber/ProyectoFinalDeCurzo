@@ -22,8 +22,8 @@ class userController extends Controller
     public function log(request $datos){
         $user = usuario::where(strtoupper('usuario'), '=', strtoupper($datos->usuario))->where('contraseña', '=', $datos->contraseña)->first();
         if(!isset($user->Usuario)){
-            
-            return view('login');
+            $error = 'Usuario o contraseña incorrectos';
+            return view('login', compact('error'));
             
         } else if(strtoupper($user->Usuario) == strtoupper($datos->usuario) || strtoupper($user->email) == strtoupper($datos->usuario)){
             session_start();
@@ -40,12 +40,14 @@ class userController extends Controller
         $user = usuario::where('email','=', $datos->email)->first();
         $user2 = usuario::where('Usuario','=', $datos->usuario)->first();
         if ($datos->contraseña != $datos->password || $datos->usuario == null) {
-            return redirect('register');
+            $error = 'La contraseña debe coincidir';
+            return view('register',compact('error'));
         } else if(isset($user2)){
-
-            return redirect('register');
+            $error = 'El usuario no está disponible';
+            return view('register',compact('error'));
         } else if(isset($user)){
-            return redirect('register');
+            $error = 'El email no está disponible';
+            return view('register',compact('error'));
         }else{
             $user = new usuario;
             $user->Usuario = $datos->usuario;
