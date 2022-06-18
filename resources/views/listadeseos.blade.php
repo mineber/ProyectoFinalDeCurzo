@@ -24,7 +24,7 @@
         @endforeach     
     </div>
     <hr>
-    @endif
+    @endif 
     @endforeach
     <div class="producto">
         @foreach($productos as $producto)

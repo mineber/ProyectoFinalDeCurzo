@@ -4,7 +4,7 @@
 <div class="viaje-page">
 <img src="img/travel/{{$viajes->foto}}" alt="">
 <div class="viaje-info">
-   <h1> {{$viajes->Nombre}} @if($contadorp != 0)- {{round($media/$contadorp, 2)}} * @endif</h1>
+   <h1> {{$viajes->Nombre}} @if($contadorp != 0)- {{round($media/$contadorp, 2)}} ★ @endif</h1>
    <hr>
    <p>{{$viajes->Descripcion}}</p>
    <hr>
@@ -38,7 +38,7 @@
                     <img src="img/profile/{{$user->fotoDePerfil}}" alt="" class="img-profile-comments" onclick="document.getElementById('getProfile<?=$user->id ?>').click()" >
 
                     <input type="submit" value="" hidden id="getProfile{{$user->id}}">
-                        <h3>{{$comentario->Usuario}} | {{$comentario->Puntuacion}}*</h3>
+                        <h3>{{$comentario->Usuario}} | {{$comentario->Puntuacion}}★</h3>
                 </div>
                     @endif
                     @endforeach

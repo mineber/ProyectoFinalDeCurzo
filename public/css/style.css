@@ -76,9 +76,11 @@ header ul li:hover {
     height: 490px;
     background-color: white;
     overflow: hidden;
+    transition: all 300ms;
 }
 .carrusel:hover{
     cursor: pointer;
+    transform: scale(1.05);
 }
 .carrusel img{
     width: 100%;
@@ -109,6 +111,7 @@ header ul li:hover {
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     justify-items: center;
+    transition: all 300ms;
 }
 .news-cards img{
     width: 200px;
@@ -121,6 +124,7 @@ header ul li:hover {
 }
 .news-cards:hover{
     cursor: pointer;
+    transform: scale(1.05);
 }
 .travel-card{
     overflow: hidden;
@@ -198,7 +202,9 @@ i{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    transition: all 300ms;
 }
+
 .shop-card img{
     height: 400px;
     width: 300px;
@@ -208,6 +214,10 @@ i{
     background-color: white;
     text-align: center;
     width: 300px;
+}
+.shop-card:hover{
+    
+    transform: scale(1.05);
 }
 .shop-info hr{
     width: 90%;
@@ -379,14 +389,16 @@ footer {
     width: 20%;
     background-color: white;
     min-height: 300px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .commentsphotos{
-    border-radius: 5%;
+    border-radius: 25px;
     border: 1px solid black;
     width: 60%;
     background-color: white;
     text-align: center;
     padding: 20px 0px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .commentsphotos hr{
     width: 90%;
@@ -451,6 +463,7 @@ footer {
     padding: 20px;
     margin-top: 20px;
     text-align: center;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .producto img{
     width: 100px;
@@ -479,7 +492,7 @@ footer {
     height: 20px;
     position: relative;
     top: 5px;
-    border-radius: 25px;
+    border-radius: 25px; 
 }
 
 .conf{
@@ -490,6 +503,7 @@ footer {
     border: 2px solid black;
     padding: 20px;
     margin-top: 20px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 .producto-page{
@@ -503,6 +517,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: row;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .producto-page img{
     height: 100%;
@@ -537,6 +552,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .viaje-page img{
     margin-top: 2.5%;
@@ -577,6 +593,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .en-info{
     width: 80%;
@@ -588,6 +605,7 @@ footer {
     border-radius: 25px;
     height: 80%;
     border:1px solid black;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .img-profile-comments:hover{
     cursor: pointer;

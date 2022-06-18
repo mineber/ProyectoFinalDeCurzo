@@ -31,12 +31,12 @@
                 </select>
                 <select name="Puntuacion" id="" class="btn btn-select" require>
                     <option value="AllCategories" selected hidden>¡Valora!</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                    <option value="1">1 ★</option>
+                    <option value="2">2 ★</option>
+                    <option value="3">3 ★</option>
+                    <option value="4">4 ★</option>
+                    <option value="5">5 ★</option>
+                </select> 
                 <input type="submit" value="Publicar comentario" class="btn btn-outline-primary">
             </form>
             <hr>
@@ -61,7 +61,7 @@
                 <h2>Viaje: {{$valoracion->Viaje}} </h2>
                 <div class="comments-content">
                 <img src="img/profile/{{$user->fotoDePerfil}}" alt="" class="img-profile-comments">
-                        <h3>{{$valoracion->Usuario}} | {{$valoracion->Puntuacion}}*</h3>
+                        <h3>{{$valoracion->Usuario}} | {{$valoracion->Puntuacion}}★</h3>
                 
                 <p>{{$valoracion->comentario}}.</p>
                 @if($_SESSION['user'] == $user->Usuario)

@@ -56,7 +56,7 @@ class userController extends Controller
             $user->informacionp = '';
             $user->fotoDePerfil = 'noprofile.png';
             $user->fotoHeader = 'default_image.webp';
-            $user->contraseña = bcrypt($datos->contraseña);
+            $user->contraseña = $datos->contraseña;
             $user->tipo = 'normal';
             $user->save();
             return view('login');
