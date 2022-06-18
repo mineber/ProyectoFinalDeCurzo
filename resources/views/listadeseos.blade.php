@@ -29,7 +29,7 @@
     <div class="producto">
         @foreach($productos as $producto)
         @if($deseo->Articulo == $producto->id)
-        <img src="img/shop/{{$producto->Fotos}}" alt="">
+        
         <h2>Total:</h2>   
         <h2 style="color: green;"><?= $_SESSION['total']?>€</h2> 
         <input type="button" value="Pagar" class="btn btn-outline-primary"> 
