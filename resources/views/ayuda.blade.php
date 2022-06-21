@@ -3,7 +3,7 @@
 @section('content')
 <div class="en-info" style="text-align: justify; padding: 40px; font-size: 1.5rem;">
 <h2>Principal</h2>
-    <p>Para empezar podemos observar el header de la página. Desde aquí podemos llegar a varios apartados de nuestra página. <br><br>
+    <p>Para empezar podemos observar el encabezado de la página. Desde aquí podemos llegar a varios apartados de nuestra página. <br><br>
     
     En la página encontraremos novedades sobre nuestros vuelos y novedades sobre los productos de la tienda. Si clickeas en cualquiera de los productos o en el viaje te llevará a una página de información sobre el producto/viaje que hayas clickeado. <br><br>
     <h2>Viajes</h2>

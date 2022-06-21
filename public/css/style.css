@@ -166,7 +166,7 @@ header ul li:hover {
 }
 .travel-info p{
     padding-top: 5px;
-    height: 380px;
+    min-height: 380px;
 }
 .travel-info h3{
     padding-bottom: 5px;
@@ -638,12 +638,17 @@ header form button {
 @media (max-width:1233px){
     header{
         justify-items: center;
+        text-align: center;
+        padding-top: 10px;
     }
 header form button p{
     display:none;
 }
 header ul a li p{
     display: none;
+}
+header ul a {
+    min-width: 0px;
 }
 header ul li .icon-header{
     display: initial;
@@ -742,7 +747,7 @@ footer{
     padding-bottom: 15px;
 }
 header ul li{
-    width: 50px;
+    min-width: 50px;
 }
 .viaje-page{
     width: 95%;
