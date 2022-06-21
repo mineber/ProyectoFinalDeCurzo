@@ -3,11 +3,13 @@
 @section('content')
 <div class="deseos">
     @if(count($deseos) >0)
+    <?php $lista = ''; ?>
     <h1 style="padding: 20px 0px;">Lista de deseos</h1>
     <hr>
     @foreach($deseos as $deseo)
     @if($deseo->Usuario == $_SESSION['user']) 
     <div class="producto">
+        
         @foreach($productos as $producto)
         @if($deseo->Articulo == $producto->id)
         <img src="img/shop/{{$producto->Fotos}}" alt="">
@@ -19,7 +21,11 @@
         <input type="hidden" name="deseoid" value="{{$deseo->id}}">
         <input type="submit" value="Eliminar de la lista" class="btn btn-outline-primary"> 
         </form>
-        
+        <?php 
+        if($lista == ''){
+            $lista = $deseo->id;
+        } else {
+        $lista = $lista .','.$deseo->id; }?>
         @endif
         @endforeach     
     </div>
@@ -32,7 +38,14 @@
         
         <h2>Total:</h2>   
         <h2 style="color: green;"><?= $_SESSION['total']?>€</h2> 
-        <input type="button" value="Pagar" class="btn btn-outline-primary"> 
+        <form action="{{route('comprar')}}" method="post">
+            @csrf
+        <input type="submit" value="Pagar" class="btn btn-outline-primary"> 
+        
+      
+    <input type="hidden" name="lista" value="{{$lista}}"> 
+       
+        </form>
         @endif
         @endforeach  
         
@@ -48,7 +61,7 @@
         
         <?php for ($i=0; $i < 3; $i++) { 
             # code...
-            $aleatorio = rand(1,10);
+            $aleatorio = rand(0,8);
         ?>
         
         <div class="shop-card">
@@ -66,12 +79,13 @@
                 @csrf
                     <input type="hidden" name="id" value="{{$productos[$aleatorio]->id}}">
                 <button value="Guardar" name="" class="btn btn-outline-primary">Guardar</button>
-                </form></div>
+                </form>
+                </div>
             </div>
         </div>
         
         <?php } ?>
     @endif  
+    </div>
 </div>
-    
 @endsection

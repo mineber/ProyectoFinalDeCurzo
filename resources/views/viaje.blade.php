@@ -11,10 +11,10 @@
     <h2 class="btn-productos">Precio: {{$viajes->Precio}}€
                 </h2> 
                 <br><br>
-                <form action="{{route('save')}}" method="post">
+                <form action="{{route('viajar')}}" method="post">
                 @csrf
                     <input type="hidden" name="id" value="{{$viajes->id}}">
-                <button value="Guardar" name="" class="btn btn-outline-primary">Viajar</button>
+                    <input type="submit" value="Viajar" class="btn btn-outline-primary">
                 </form>
 </div>
 </div>

@@ -33,4 +33,10 @@ class travelController extends Controller
         
         return view('viaje',compact("viajes"), compact('coment', 'users', 'media', 'contadorp'));
     }
+    
+    public function viajar(request $datos){
+        $viajes = viajes::where('id', '=', $datos->id)->first();
+        $viajes = $viajes->Nombre;
+        return view('viajedone' , compact('viajes'));
+    }
 }

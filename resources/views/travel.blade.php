@@ -7,7 +7,12 @@
         <div class="travel-info">
             <h3>{{$viaje->Nombre}}</h3>
             <hr>
-            <p>{{$viaje->Descripcion}}
+            <p> 
+                <?php 
+            echo substr($viaje->Descripcion, 0, 1000);  
+            if(strlen($viaje->Descripcion)> 1000) {
+                echo '. . .';
+            } ?>
 
 
 

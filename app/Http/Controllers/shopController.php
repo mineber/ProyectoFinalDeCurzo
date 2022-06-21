@@ -40,4 +40,16 @@ class shopController extends Controller
         $productos = tienda::where('id', '=', $datos->id)->first();
         return view('producto',compact('productos'));
     }
+    public function comprar(request $datos){
+        session_start();
+        $array = explode(',',($datos->lista));
+        $array = array_unique($array);
+        for ($i=0; $i < count($array); $i++) { 
+            $productos = listadeseos::where('id', '=', $array[$i])->delete();
+        }
+           
+        
+        
+        return view('compradone', compact('productos'));
+    }
 }
